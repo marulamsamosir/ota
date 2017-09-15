@@ -1,0 +1,386 @@
+
+ â–¼ Resurrection Remix Nougat Ver 5.8.4 Changelog
+
+
+ â–¼ 09/15/2017
+
+
+ â–ª project android/
+ â–ª 5f4c76a Inital
+ â–ª ec9be42 Initial
+ â–ª f3becfb Update README.md
+ â–ª a8870ed Update README.md
+ â–ª 04263db Update README.md
+ â–ª 027538d Initial commit
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 0a810ae SnapdragonCamera
+ â–ª ffe3e98 Initial
+
+ â–¼ 09/13/2017
+
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 47a129d Bluetooth: Properly check L2CAP config option output buffer length
+ â–ª 3812221 driver core: platform: fix race condition with driver_override
+ â–ª f318882 ipx: call ipxitf_put() in ioctl error path
+
+ â–¼ 09/12/2017
+
+
+ â–ª project vendor/xiaomi/
+ â–ª 1c0aa6e Initial
+
+ â–¼ 09/11/2017
+
+
+ â–ª project packages/apps/TvSettings/
+ â–ª acace0c Use new updater activity name for update button
+
+ â–¼ 09/10/2017
+
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª aab6e9f msm8937: hal: Support custom mixer_paths file names
+ â–ª ed2f918 policy_hal: Don't fill in offload information for unsupported streams
+ â–ª c816745 msm8937: acdb: Make acdb reloading optional
+ â–ª 49e5b92 ssr: Fix building with OSS materials
+ â–ª 955bf9d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+ â–ª 821cccf msm8996: audio: Add l/r mic swapping when using stereo mics
+ â–ª ce1ee1d Add special case for stereo camcorder
+ â–ª bd30b5b hal: Featureize APE/VORBIS/WMA offload support
+ â–ª d991672 audio policy: fix capture indication to sound trigger service.
+ â–ª 4944746 hal: Don't try to record using 3-mic unless we mean it
+ â–ª 1a22ffe hal: Haxed header
+ â–ª 62da52b audio: Fix flac offload not working
+ â–ª a819e32 hal: Fix build with HDMI disabled
+ â–ª 3c433f9 audio: Fix complilation warnings under Clang
+ â–ª 0881ab0 msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled
+ â–ª 3b00fbd audio: Extend platform parser to allow device name aliasing
+ â–ª fa3ad7e hal: post_proc: enabled / disable volume listener based on prop
+ â–ª 1eafbe7 hal: Support the audio amplifier hook
+ â–ª 93c4733 audio: Use direct project pathmap
+
+ â–ª project hardware/qcom/display-caf/msm8996/
+ â–ª 0e4f36e display: Fix ColorMetaData
+ â–ª 837bea4 display-caf: msm8996: Use ColorMetaData in SDM in hwc2
+ â–ª b57e903 display-caf: 8996: Add color metadata to libgralloc1
+ â–ª 149b738 hwc2: Only set display_width and display_height when equal to zero
+ â–ª ad7a601 hwc2: Handle empty lists in AcceptDisplayChanges
+ â–ª 8a47e28 msm8996: hwc2: check for null layers in layer map
+ â–ª 934772f hwc2 : Fix layer updating flag
+ â–ª 4d97c5e gralloc: Return an error if the buffer was not mapped
+ â–ª 9f3b96b Revert "Revert "gralloc: Default to 601 color space""
+ â–ª 0a5444d hwc2: Workaround use after free by surfaceflinger
+ â–ª 5e1a288 hwc2: Update composition types on AcceptDisplayChanges
+ â–ª 066fd9b Revert "gralloc: Default to 601 color space"
+ â–ª 6d28c4b gralloc: Disable UBWC for writeback buffers
+ â–ª 557c5ff hwc2: Initialize color mode to native
+ â–ª 1c5f5a8 hwc2 : Allow only top most cursor layer
+ â–ª fd935a0 Revert "gralloc: Return an error if the buffer was not mapped"
+ â–ª bcd5a49 hwc2: Fix solid fill
+ â–ª 52218dc sdm:hwc2: Store higher order mode id in case of clash
+ â–ª 302a25c gralloc: Return an error if the buffer was not mapped
+ â–ª d42e293 hwc2: Fix retire fences
+ â–ª 0d41f5d hwc2: Always store a release fence if a layer is presented
+ â–ª 2b1d161 hwc2: Use current frames retire fence only for the primary
+ â–ª 2113967 8996/HWC2: Return this frame's retire fence
+ â–ª 8fe4a3b hwc2: Remove default mode application at boot.
+ â–ª 6257c08 hwc2: Support HWC2_CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM
+ â–ª 36f1973 hwc: Set ioprio for vsync thread
+ â–ª bb18e78 Fix duplicate copy file rules
+ â–ª cc9a267 Don't build lights module if vendor supplies it
+ â–ª 8c771e6 display: Use project pathmap
+
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª e84dcfe Fix duplicated OMX.qcom.audio.decoder.aac entry
+ â–ª 1b85693 media: libOmxSw encoders require prop headers :(
+ â–ª 8adf136 mm-video: Disable proprietary extension
+ â–ª 166864f venc: Fix VQZip issue
+ â–ª 914d3bc media: Avoid collision with FFMPEG plugin
+ â–ª 71d6868 media: Use project pathmap
+
+ â–ª project packages/apps/Jelly/
+ â–ª 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
+
+ â–¼ 09/09/2017
+
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 22c0528 ANDROID: sdcardfs: Add missing break
+ â–ª 0cedb78 ANDROID: Sdcardfs: Move gid derivation under flag
+ â–ª 8bcbef5 ANDROID: mnt: Fix freeing of mount data
+ â–ª aa2b306 drivers: staging: Update qcacld-2.0 driver
+ â–ª 9aed790 Merge tag 'LA.UM.5.5.r1-05700-8x96.0' into HEAD
+
+ â–ª project vendor/cm/
+ â–ª 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
+
+ â–ª project vendor/xiaomi/
+ â–ª 0ba5be3 msm8996-common: Remove pd-mapper
+ â–ª 6e6c591 msm8996-common: Update to MIUI 7.9.7 Global dev blobs
+
+ â–¼ 09/08/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 0f93f23 msm8996-common: Remove pd-mapper
+
+ â–ª project frameworks/base/
+ â–ª fd3a9e3 Merge pull request #208 from BernardoBas/nougat
+ â–ª cf0fd01 Fix not to disable the GPS prematurely
+
+ â–ª project packages/apps/Settings/
+ â–ª 924a9c6 Add J5H to the list (#864)
+
+ â–¼ 09/07/2017
+
+
+ â–ª project packages/apps/Settings/
+ â–ª 2683f89 I've changed my name (#862)
+
+ â–¼ 09/05/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 050e570 msm8996-common: configs: Advertize high-speed recording profiles
+
+ â–ª project vendor/xiaomi/
+ â–ª a6df1a8 natrium: Update to MIUI 7.8.24 Global dev blobs
+ â–ª e77035e gemini: Update to MIUI 7.8.31 Global dev blobs
+ â–ª 66ea291 msm8996-common: Update to MIUI 7.8.31 Global dev blobs
+
+ â–¼ 09/04/2017
+
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
+
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª b9cc6fd Merge 1a05f07a6fff81aa44d8016f1047d922fbbbce02 on remote branch
+
+ â–ª project packages/apps/SetupWizard/
+ â–ª f7d9926 SetupWizard: Fix the accessibility services gesture
+
+ â–¼ 09/02/2017
+
+
+ â–ª project packages/apps/SetupWizard/
+ â–ª 77ef790 SetupWizard: Remove Themes related code
+
+ â–¼ 08/31/2017
+
+
+ â–ª project packages/apps/Settings/
+ â–ª 84d2690 Asus Zenfone 3 (Z012D) Maintainer (#859)
+
+ â–ª project packages/resources/devicesettings/
+ â–ª ff0aa81 Add strings for devices' custom gesture handlers
+
+ â–¼ 08/30/2017
+
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª db93e14 FROMLIST: f2fs: introduce discard_granularity sysfs entry
+ â–ª 65ee37f FROMLIST: f2fs: use IPU for cold files
+ â–ª 14f0c6d FROMLIST: f2fs: make background threads of f2fs being aware of freezing
+
+ â–ª project packages/apps/Settings/
+ â–ª 67faee0 Piccolo Maintainer (#858)
+ â–ª 7b502c0 D851 Maintainer (#855)
+
+ â–¼ 08/29/2017
+
+
+ â–ª project packages/apps/Jelly/
+ â–ª 5f4c6b0 Jelly: Add elevation effect to searchBar
+
+ â–ª project packages/apps/Settings/
+ â–ª 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
+
+ â–¼ 08/27/2017
+
+
+ â–ª project frameworks/base/
+
+ â–ª project packages/apps/DUI/
+
+ â–ª project packages/apps/Jelly/
+ â–ª 8e71ae9 Jelly: Remove the SwipeRefreshLayout
+
+ â–ª project packages/apps/OmniSwitch/
+
+ â–ª project packages/apps/Settings/
+
+ â–¼ 08/26/2017
+
+
+ â–ª project packages/apps/Eleven/
+ â–ª 943d43e Eleven: Fix restoring user settings
+
+ â–ª project packages/apps/UnifiedEmail/
+ â–ª 2dd00df Email: Fix led notification settings
+
+ â–ª project packages/services/Telephony/
+ â–ª 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+ â–¼ 08/25/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 419407f msm8996-common: Move Lineage specific overlays to overlay-lineage
+
+ â–ª project frameworks/base/
+ â–ª 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
+ â–ª 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
+ â–ª d1cb955 Tweak Privacy Guard dialog layout
+ â–ª 20d80eb PowerManager: Allow to distinguish different keypresses
+ â–ª 8b63de6 Add @hide annotation to the privacy guard ops set
+ â–ª 4193207 Change visibility of the Privacy Guard ops set
+ â–ª 6ab7b90 Camera: ignore torch status update for aux or compsite camera
+ â–ª be1d6ba base: audioservice: Set BT_SCO status
+
+ â–ª project frameworks/native/
+ â–ª 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ â–ª project frameworks/opt/telephony/
+ â–ª b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
+
+ â–¼ 08/24/2017
+
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª 6172a26 Promotion of audio-userspace.lnx.2.1.c1-00038.
+
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª 1a05f07 Promotion of video-userspace.lnx.2.1.c1-00048.
+
+ â–ª project packages/apps/Settings/
+ â–ª 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
+
+ â–¼ 08/23/2017
+
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª b3fea85 Merge "Fix security vulnerability: Equalizer setParameter memory overflow" into audio-userspace.lnx.2.1.c1-dev
+ â–ª bdb5650 Promotion of audio-userspace.lnx.2.1.c1-00037.
+ â–ª 577263d Merge "policy_hal: adjust bitrate restriction for wma" into audio-userspace.lnx.2.1.c1-dev
+
+ â–¼ 08/22/2017
+
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª 1d8f162 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ â–¼ 08/21/2017
+
+
+ â–ª project packages/apps/Jelly/
+ â–ª 2a6aa75 Fix NPE.
+
+ â–¼ 08/20/2017
+
+
+ â–ª project build/
+ â–ª 6a081e1 envsetup: stop jack server once build completed
+
+ â–ª project frameworks/base/
+
+ â–ª project hardware/ril-caf/
+ â–ª d8290dd ril: Allow targets to disable Clang
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 6a39883 ARM: dts: Update batterydata from MIUI
+
+ â–ª project packages/apps/AudioFX/
+
+ â–ª project packages/apps/CMParts/
+ â–ª f763660 CMParts: Add strings for DCI-P3 color profile
+
+ â–ª project packages/apps/Eleven/
+
+ â–ª project packages/apps/Jelly/
+
+ â–ª project packages/apps/OmniSwitch/
+
+ â–ª project packages/apps/Settings/
+ â–ª 14513f5 Update s7 edge maintainer
+ â–ª 3bb44bb Transfer maintainership of Galaxy S7 series to schwabe93
+
+ â–ª project packages/apps/SetupWizard/
+
+ â–ª project packages/apps/Terminal/
+
+ â–ª project packages/apps/Trebuchet/
+
+ â–ª project packages/apps/UnifiedEmail/
+
+ â–ª project packages/resources/devicesettings/
+
+ â–¼ 08/19/2017
+
+
+ â–ª project device/qcom/sepolicy/
+ â–ª 96615af msm8974: Do not grant DAC override permission to netmgrd
+ â–ª c631819 Use set_prop() macro for property sets
+
+ â–ª project frameworks/native/
+ â–ª afbd1c1 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª 229fe55 Merge 7b398779d82912cdaaf10a549f228c38f7b2e5f6 on remote branch
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª f7f55eb Merge 8498c2cd15113964bc07a47f8f7803ab4c4f525a on remote branch
+ â–ª 49c4581 Revert "dmaengine: device must have at least one channel"
+
+ â–ª project packages/apps/Settings/
+ â–ª 4dccd0d Changing Galaxy s7 edge Maintainer (#846)
+
+ â–ª project packages/apps/SnapdragonCamera/
+ â–ª ef3e5c5 SnapdragonCamera: add round launcher icon
+
+ â–¼ 08/18/2017
+
+
+ â–ª project frameworks/native/
+ â–ª 766d692 PowerManager.h: Define USER_ACTIVITY_FLAG values
+ â–ª c1f311b native: Increase ART heap limit to 192MB for 1024MB RAM devices
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 6c89512 soc: qcom: secure_buffer: Fix memory leak
+
+ â–¼ 08/17/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 43b0658 msm8996-common: Update extractors to match the latest templates
+
+ â–ª project hardware/cyanogen/
+ â–ª e2f8e45 livedisplay: SDM: Add support for DCI-P3 display mode
+
+ â–ª project hardware/qcom/wlan-caf/
+ â–ª 93c8631 WifiHAL: Free the stats received so far if requestResponse() fails
+ â–ª eabd5a6 Wifi-HAL: Move llstats freeing to a common API
+
+ â–ª project packages/apps/Settings/
+ â–ª aca49e9 Add Co Maintainer for Jalebi (#845)
+
+ â–¼ 08/16/2017
+
+
+ â–ª project hardware/qcom/bt-caf/
+ â–ª 328d8af Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
+
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª 98e495d mm-video-v4l2: venc: Advertise correct output-size for meta-mode
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 982618f dmaengine: device must have at least one channel
+
+ â–ª project packages/apps/Jelly/
+ â–ª 21b9d05 Jelly: Check for onChanged in history data observer
+
+ â–ª project packages/apps/Settings/
+ â–ª 115a541 added helium (#843)
+
