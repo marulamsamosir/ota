@@ -2,22 +2,277 @@
  â–¼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- â–¼ 09/15/2017
+ â–¼ 09/21/2017
+
+
+ â–ª project frameworks/base/
+
+ â–ª project packages/apps/Settings/
+
+ â–¼ 09/20/2017
+
+
+ â–ª project frameworks/native/
+ â–ª 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+
+ â–ª project hardware/cyanogen/
+ â–ª da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
+
+ â–ª project system/extras/su/
+ â–ª 11730a5 correct delivering process return code to caller
+
+ â–¼ 09/19/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª ea99045 Merge branch 'lineage_msm8996-oreo' into rremix-nougat
+
+ â–ª project frameworks/av/
+ â–ª 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
+
+ â–ª project hardware/qcom/fm/
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 3f13b8a drivers: staging: Update qcacld-2.0 driver
+ â–ª 62843cf Merge tag 'LA.UM.5.5.r1-05800-8x96.0' into HEAD
+
+ â–ª project packages/apps/AudioFX/
+
+ â–ª project packages/apps/Bluetooth/
+
+ â–ª project packages/apps/Calendar/
+
+ â–ª project packages/apps/Camera2/
+
+ â–ª project packages/apps/CellBroadcastReceiver/
+
+ â–ª project packages/apps/CertInstaller/
+
+ â–ª project packages/apps/Eleven/
+
+ â–ª project packages/apps/Email/
+
+ â–ª project packages/apps/EmergencyInfo/
+
+ â–ª project packages/apps/Exchange/
+
+ â–ª project packages/apps/FMRadio/
+
+ â–ª project packages/apps/Gallery2/
+
+ â–ª project packages/apps/Jelly/
+
+ â–ª project packages/apps/ManagedProvisioning/
+
+ â–ª project packages/apps/Nfc/
+
+ â–ª project packages/apps/Recorder/
+
+ â–ª project packages/apps/SetupWizard/
+
+ â–ª project packages/apps/Stk/
+
+ â–ª project packages/apps/Tag/
+
+ â–ª project packages/apps/Terminal/
+
+ â–ª project packages/apps/Trebuchet/
+
+ â–ª project packages/apps/TvSettings/
+
+ â–ª project packages/apps/UnifiedEmail/
+
+ â–ª project packages/inputmethods/LatinIME/
+
+ â–ª project packages/providers/CalendarProvider/
+
+ â–ª project packages/providers/ContactsProvider/
+
+ â–ª project packages/providers/DataUsageProvider/
+
+ â–ª project packages/providers/DownloadProvider/
+
+ â–ª project packages/providers/MediaProvider/
+
+ â–ª project packages/providers/TelephonyProvider/
+
+ â–ª project packages/resources/devicesettings/
+
+ â–ª project packages/screensavers/Basic/
+
+ â–ª project packages/screensavers/PhotoTable/
+
+ â–ª project packages/wallpapers/LivePicker/
+
+ â–ª project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ â–ª project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ â–¼ 09/18/2017
+
+
+ â–ª project frameworks/av/
+ â–ª f80e21a audioflinger: Use offloaded effects in case of PCM offload
+
+ â–ª project packages/apps/Eleven/
+ â–ª 49b8b9c Eleven: Create one cursor per background task
+
+ â–ª project packages/apps/Settings/
+ â–ª efbb78f Add moderator tags to about settings
+
+ â–¼ 09/17/2017
 
 
  â–ª project android/
- â–ª 5f4c76a Inital
- â–ª ec9be42 Initial
- â–ª f3becfb Update README.md
- â–ª a8870ed Update README.md
- â–ª 04263db Update README.md
- â–ª 027538d Initial commit
+ â–ª ea19c6f Add: SoundRecorder apps
+ â–ª 621dd7b Add: SpeechRecorder apps
+ â–ª a5cf984 Merge remote-tracking branch 'rremix/nougat' into rremix-nougat
+ â–ª f0c3b1f manifest: switch to our forks of several repos
+
+ â–ª project build/
+ â–ª f6958ef Updating Security String to 2017-09-05 Bug:63846344
 
  â–ª project device/xiaomi/gemini/
+ â–ª df06a2d Fixing SnapDragonCam configuration
+ â–ª f97e8b6 Add: SpeechRecorder apps
+ â–ª 8483e07 Add: SoundRecorder apps
+
+ â–ª project external/skia/
+ â–ª 878b9da Defend against ICOs with large BMPs embedded DO NOT MERGE
+
+ â–ª project external/sonivox/
+ â–ª 188ae17 Fix compiler warnings in sonivox and enable -Werror.
+
+ â–ª project frameworks/av/
+ â–ª eeff3f6 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ â–ª project frameworks/base/
+ â–ª bb68d19 Back-port fixes for b/62196835
+ â–ª cbce7ff Don't disable the GPS prematurely
+ â–ª 8503dcf PrivateStorageInfo: Exclude primary physical volume total space
+ â–ª fe5307e Keyguard: Change fingerprint listening behavior
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª ea5709d Prevent potential double frees in sg driver
+
+ â–ª project packages/apps/DUI/
+
+ â–ª project packages/apps/Dialer/
+
+ â–ª project packages/apps/Messaging/
+ â–ª e0708ed Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ â–ª project packages/apps/OmniSwitch/
+
+ â–ª project packages/apps/Settings/
+ â–ª 6d05ff9 Back-port ag/2491664
+ â–ª 2214a57 AppOpsDetails: Generate correct summary when changing list prefs
+ â–ª ac086f6 Settings: Allow devices to provide remote gesture preferences
+ â–ª 1b1f6ea Settings: Fix internal storage summary for non-emulated storage devices
+ â–ª 4776440 Settings: Always show Privacy Guard permissions
+ â–ª 02a6349 AppOps: Switch to an HashMap
+ â–ª a3bbfda Settings: Add a shortcut icon for carrier selection
+ â–ª cb1ab8b AppOps: Redesign
+ â–ª 3a0e238 Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
+
+ â–ª project packages/apps/SnapdragonCamera/
+ â–ª ad212b4 WideAnglePanoramaUI: Show switcher on Stop Capture
+ â–ª e694545 Snap: fix highspeed and high-framerate video recording
+ â–ª 5c3a315 Snap: fix ArrayIndexOutOfBoundsException on setUpCameraOutputs
+
+ â–¼ 09/16/2017
+
+
+ â–ª project android/
+ â–ª 9ffad6d SnapDragonCam
+ â–ª 634c585 Initial
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 730e343 Fixing depedencies
  â–ª 0a810ae SnapdragonCamera
+
+ â–ª project external/libavc/
+ â–ª 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
+ â–ª 871e2ff Decoder: Fixed overflow in refernce list creation.
+ â–ª 73ff61b Initialize DPB structures to valid values.
+ â–ª 1a4a25a Added error check for output buffer size.
+
+ â–ª project external/libhevc/
+ â–ª 2f28765 Limit boundary PU sizes in case of errors
+ â–ª 3008a9a Fix array size for hrd parameters
+ â–ª d2b7822 Check number of output buffers and sizes
+ â–ª 8e3fe3b Return error for invalid crop parameters
+
+ â–ª project external/libvpx/
+ â–ª 50bde27 DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream
+
+ â–ª project external/sonivox/
+ â–ª afc7e48 Fix interpolator
+
+ â–ª project external/sqlite/
+ â–ª f55bb7e DO NOT MERGE - fix FTS3 column pointer handling
+
+ â–ª project external/tremolo/
+ â–ª 0000b2b Use heap instead of alloca in res012.c
+
+ â–ª project frameworks/av/
+ â–ª be42248 MPEG4Source: fix fragmented read.
+ â–ª ac561ef stagefright: fix crash due to bad timestamp index
+ â–ª 47f7228 stagefright: check aac_frame_length to prevent infinite loop
+ â–ª 708ca76 MediaPlayerService: fix access of mPlayer in client
+ â–ª 20a8bdc audio effects: filter reserved effect commands
+ â–ª 1f8cd83 MPEG4Extractor: ensure returned status is checked.
+ â–ª 09ebf66 DO NOT MERGE Check frame handle validity before freeing buffer.
+ â–ª ae74db2 Change MPEG2 reinit Error Handling
+ â–ª 6e05adf Track: Check buffer size of static tracks
+ â–ª e0b8295 MPEG4Extractor: check size for yrrc box
+ â–ª 7a84ae8 AudioFlinger: Fix memory allocation for client-less tracks
+ â–ª b1c91bc Notify Errors Appropriately from SoftMPEG2
+ â–ª 6dff427 EffectBundle: Check value size for get preset name
+ â–ª 3fcd8ac Fix TOCTOU problem in libstagefright_soft_aacenc
+
+ â–ª project frameworks/minikin/
+ â–ª 440e10a Reject unsorted cmap entries. DO NOT MERGE
+
+ â–ª project hardware/broadcom/wlan/
+ â–ª 71b070f net: wireless: bcmdhd: update bcm4354/4356 FW (7.35.101.8)
+
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª 53c7f74 Equalizer: Check value size for get preset name
+
+ â–ª project hardware/qcom/audio/default/
+ â–ª 3f7e702 Equalizer: Check value size for get preset name
+
+ â–ª project packages/apps/Messaging/
+ â–ª 87f81d9 37742976 - Catch bad gifs
+
+ â–ª project packages/apps/Nfc/
+ â–ª f20aedf Add READ_EXTERNAL_STORAGE for file based Uri while beaming.
+
+ â–¼ 09/15/2017
+
+
+ â–ª project device/xiaomi/gemini/
  â–ª ffe3e98 Initial
 
- â–¼ 09/13/2017
+ â–ª project packages/apps/AudioFX/
+ â–ª 3f7743b AudioFX: use vector drawables
+ â–ª b94e30b AudioFX: set theme accent to white
+ â–ª 00d3381 AudioFX: match control switches color with fragment background
+ â–ª f5d78ad AudioFX: Add Reverb toggle
+ â–ª 9fe5a3a AudioFX: Use default material toggle
+ â–ª 9662067 AudioFX: Apply effects independently of the output flags
+
+ â–ª project system/bt/
+ â–ª 215d434 Add missing extension length check while parsing BNEP control packets
+ â–ª a61aaf1 Free p_pending_data from tBNEP_CONN to avoid potential memory leaks
+ â–ª 922d50b Add a missing check for PAN buffer size before copying data
+ â–ª c6f7f86 Add missing packet length checks while parsing BNEP control packets
+ â–ª 7e30b79 Add missing continuation offset check for SDP continuation requests
+ â–ª 0700e5b Disable PAN Reverse Tethering when connection originated by the Remote
+ â–ª 8825957 Allocate buffers of the right size when BT_HDR is included
+
+ â–¼ 09/14/2017
 
 
  â–ª project kernel/xiaomi/msm8996/
@@ -33,6 +288,14 @@
 
  â–¼ 09/11/2017
 
+
+ â–ª project device/xiaomi/gemini/
+ â–ª 334a8b9 msm8996-common: init: Check if power off alarm is set
+ â–ª 9540b4b msm8996-common: init: Check reboot_reason when setting alarm_boot prop
+ â–ª 4255743 msm8996-common: init: Use core init function to read from files
+
+ â–ª project packages/apps/Jelly/
+ â–ª 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
 
  â–ª project packages/apps/TvSettings/
  â–ª acace0c Use new updater activity name for update button
@@ -100,16 +363,15 @@
  â–ª 914d3bc media: Avoid collision with FFMPEG plugin
  â–ª 71d6868 media: Use project pathmap
 
- â–ª project packages/apps/Jelly/
- â–ª 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 22c0528 ANDROID: sdcardfs: Add missing break
+ â–ª 0cedb78 ANDROID: Sdcardfs: Move gid derivation under flag
+ â–ª 8bcbef5 ANDROID: mnt: Fix freeing of mount data
 
  â–¼ 09/09/2017
 
 
  â–ª project kernel/xiaomi/msm8996/
- â–ª 22c0528 ANDROID: sdcardfs: Add missing break
- â–ª 0cedb78 ANDROID: Sdcardfs: Move gid derivation under flag
- â–ª 8bcbef5 ANDROID: mnt: Fix freeing of mount data
  â–ª aa2b306 drivers: staging: Update qcacld-2.0 driver
  â–ª 9aed790 Merge tag 'LA.UM.5.5.r1-05700-8x96.0' into HEAD
 
@@ -126,10 +388,6 @@
  â–ª project device/xiaomi/gemini/
  â–ª 0f93f23 msm8996-common: Remove pd-mapper
 
- â–ª project frameworks/base/
- â–ª fd3a9e3 Merge pull request #208 from BernardoBas/nougat
- â–ª cf0fd01 Fix not to disable the GPS prematurely
-
  â–ª project packages/apps/Settings/
  â–ª 924a9c6 Add J5H to the list (#864)
 
@@ -145,6 +403,12 @@
  â–ª project device/xiaomi/gemini/
  â–ª 050e570 msm8996-common: configs: Advertize high-speed recording profiles
 
+ â–ª project hardware/qcom/audio-caf/msm8996/
+ â–ª da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
+
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª b9cc6fd Merge 1a05f07a6fff81aa44d8016f1047d922fbbbce02 on remote branch
+
  â–ª project vendor/xiaomi/
  â–ª a6df1a8 natrium: Update to MIUI 7.8.24 Global dev blobs
  â–ª e77035e gemini: Update to MIUI 7.8.31 Global dev blobs
@@ -153,11 +417,14 @@
  â–¼ 09/04/2017
 
 
- â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
+ â–ª project external/libmpeg2/
+ â–ª 5fbd70a Merge 4105a310e353bc07ed3c96345f2ef87b3a318687 on remote branch
 
- â–ª project hardware/qcom/media-caf/msm8996/
- â–ª b9cc6fd Merge 1a05f07a6fff81aa44d8016f1047d922fbbbce02 on remote branch
+ â–ª project external/sfntly/
+ â–ª 666f32b Merge 302221dbf374c9907df36a4883a8fef096f50e98 on remote branch
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 224ae2c Merge ec3b3f764bc352e6a6b4d21de152f3b25d29b579 on remote branch
 
  â–ª project packages/apps/SetupWizard/
  â–ª f7d9926 SetupWizard: Fix the accessibility services gesture
@@ -165,17 +432,24 @@
  â–¼ 09/02/2017
 
 
+ â–ª project frameworks/av/
+ â–ª be37655 omx: Skip the whole dataspace signaling on legacy QCOM
+
  â–ª project packages/apps/SetupWizard/
  â–ª 77ef790 SetupWizard: Remove Themes related code
+
+ â–¼ 09/01/2017
+
+
+ â–ª project packages/resources/devicesettings/
+ â–ª ff0aa81 Add strings for devices' custom gesture handlers
 
  â–¼ 08/31/2017
 
 
  â–ª project packages/apps/Settings/
  â–ª 84d2690 Asus Zenfone 3 (Z012D) Maintainer (#859)
-
- â–ª project packages/resources/devicesettings/
- â–ª ff0aa81 Add strings for devices' custom gesture handlers
+ â–ª 67faee0 Piccolo Maintainer (#858)
 
  â–¼ 08/30/2017
 
@@ -186,17 +460,25 @@
  â–ª 14f0c6d FROMLIST: f2fs: make background threads of f2fs being aware of freezing
 
  â–ª project packages/apps/Settings/
- â–ª 67faee0 Piccolo Maintainer (#858)
  â–ª 7b502c0 D851 Maintainer (#855)
 
  â–¼ 08/29/2017
 
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª ec3b3f7 Promotion of kernel.lnx.3.18.c5-170828.
 
  â–ª project packages/apps/Jelly/
  â–ª 5f4c6b0 Jelly: Add elevation effect to searchBar
 
  â–ª project packages/apps/Settings/
  â–ª 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
+
+ â–¼ 08/28/2017
+
+
+ â–ª project packages/apps/Jelly/
+ â–ª 8e71ae9 Jelly: Remove the SwipeRefreshLayout
 
  â–¼ 08/27/2017
 
@@ -205,15 +487,15 @@
 
  â–ª project packages/apps/DUI/
 
- â–ª project packages/apps/Jelly/
- â–ª 8e71ae9 Jelly: Remove the SwipeRefreshLayout
-
  â–ª project packages/apps/OmniSwitch/
 
  â–ª project packages/apps/Settings/
 
  â–¼ 08/26/2017
 
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 1744abc Promotion of kernel.lnx.3.18.c5-170825.
 
  â–ª project packages/apps/Eleven/
  â–ª 943d43e Eleven: Fix restoring user settings
@@ -229,6 +511,12 @@
 
  â–ª project device/xiaomi/gemini/
  â–ª 419407f msm8996-common: Move Lineage specific overlays to overlay-lineage
+
+ â–ª project external/libmpeg2/
+ â–ª 4105a31 Promotion of android-external.lnx.2.0.c1-00022.
+
+ â–ª project external/sfntly/
+ â–ª 302221d Promotion of android-external.lnx.2.0.c1-00022.
 
  â–ª project frameworks/base/
  â–ª 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
@@ -246,14 +534,29 @@
  â–ª project frameworks/opt/telephony/
  â–ª b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
 
+ â–ª project hardware/qcom/media-caf/msm8996/
+ â–ª 1a05f07 Promotion of video-userspace.lnx.2.1.c1-00048.
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª bf01854 ASoC: msm: qdspv2: initialize struct member before being used
+ â–ª 559eb1f Promotion of kernel.lnx.3.18.c5-170824.
+
  â–¼ 08/24/2017
 
 
  â–ª project hardware/qcom/audio-caf/msm8996/
  â–ª 6172a26 Promotion of audio-userspace.lnx.2.1.c1-00038.
+ â–ª b3fea85 Merge "Fix security vulnerability: Equalizer setParameter memory overflow" into audio-userspace.lnx.2.1.c1-dev
 
- â–ª project hardware/qcom/media-caf/msm8996/
- â–ª 1a05f07 Promotion of video-userspace.lnx.2.1.c1-00048.
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª c049c21 Merge "tracing : fix race condition reading saved tgids"
+ â–ª 7f9294a Merge "diag: Synchronize msg mask read and write on a peripheral"
+ â–ª 71b2e49 Promotion of kernel.lnx.3.18.c5-170823.1.
+ â–ª d5883d5 Merge "msm: ipa3: Fix IPA aggregation force close call"
+ â–ª 41e4f88 msm: ipa3: Fix IPA aggregation force close call
+ â–ª 84a5df1 Promotion of kernel.lnx.3.18.c5-170823.
+ â–ª 3b165a4 Merge "thermal: tsens: Disable Tsens interrupts during driver initialization"
+ â–ª 993865b tracing : fix race condition reading saved tgids
 
  â–ª project packages/apps/Settings/
  â–ª 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
@@ -262,125 +565,30 @@
 
 
  â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª b3fea85 Merge "Fix security vulnerability: Equalizer setParameter memory overflow" into audio-userspace.lnx.2.1.c1-dev
  â–ª bdb5650 Promotion of audio-userspace.lnx.2.1.c1-00037.
  â–ª 577263d Merge "policy_hal: adjust bitrate restriction for wma" into audio-userspace.lnx.2.1.c1-dev
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 76c5249 Merge "FROMLIST: f2fs: sanity check checkpoint segno and blkoff"
+ â–ª 23a6cb2 Merge "f2fs: sanity check segment count"
+ â–ª f49145a Merge "timerfd: Protect the might cancel mechanism proper"
+ â–ª 98b503a FROMLIST: f2fs: sanity check checkpoint segno and blkoff
 
  â–¼ 08/22/2017
 
 
+ â–ª project external/libmpeg2/
+ â–ª 38cb339 Correcting NumCoeff Check in VLD
+ â–ª 2c56624 Adding Error Check For PictureStructure Param
+ â–ª cac557b Update mbs_left In Case Of Missing Slice
+ â–ª 23fc803 Check For Zero Width/Height in Frame Header
+
  â–ª project hardware/qcom/audio-caf/msm8996/
  â–ª 1d8f162 Fix security vulnerability: Equalizer setParameter memory overflow
 
- â–¼ 08/21/2017
-
-
- â–ª project packages/apps/Jelly/
- â–ª 2a6aa75 Fix NPE.
-
- â–¼ 08/20/2017
-
-
- â–ª project build/
- â–ª 6a081e1 envsetup: stop jack server once build completed
-
- â–ª project frameworks/base/
-
- â–ª project hardware/ril-caf/
- â–ª d8290dd ril: Allow targets to disable Clang
-
  â–ª project kernel/xiaomi/msm8996/
- â–ª 6a39883 ARM: dts: Update batterydata from MIUI
-
- â–ª project packages/apps/AudioFX/
-
- â–ª project packages/apps/CMParts/
- â–ª f763660 CMParts: Add strings for DCI-P3 color profile
-
- â–ª project packages/apps/Eleven/
-
- â–ª project packages/apps/Jelly/
-
- â–ª project packages/apps/OmniSwitch/
-
- â–ª project packages/apps/Settings/
- â–ª 14513f5 Update s7 edge maintainer
- â–ª 3bb44bb Transfer maintainership of Galaxy S7 series to schwabe93
-
- â–ª project packages/apps/SetupWizard/
-
- â–ª project packages/apps/Terminal/
-
- â–ª project packages/apps/Trebuchet/
-
- â–ª project packages/apps/UnifiedEmail/
-
- â–ª project packages/resources/devicesettings/
-
- â–¼ 08/19/2017
-
-
- â–ª project device/qcom/sepolicy/
- â–ª 96615af msm8974: Do not grant DAC override permission to netmgrd
- â–ª c631819 Use set_prop() macro for property sets
-
- â–ª project frameworks/native/
- â–ª afbd1c1 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
-
- â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª 229fe55 Merge 7b398779d82912cdaaf10a549f228c38f7b2e5f6 on remote branch
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª f7f55eb Merge 8498c2cd15113964bc07a47f8f7803ab4c4f525a on remote branch
- â–ª 49c4581 Revert "dmaengine: device must have at least one channel"
-
- â–ª project packages/apps/Settings/
- â–ª 4dccd0d Changing Galaxy s7 edge Maintainer (#846)
-
- â–ª project packages/apps/SnapdragonCamera/
- â–ª ef3e5c5 SnapdragonCamera: add round launcher icon
-
- â–¼ 08/18/2017
-
-
- â–ª project frameworks/native/
- â–ª 766d692 PowerManager.h: Define USER_ACTIVITY_FLAG values
- â–ª c1f311b native: Increase ART heap limit to 192MB for 1024MB RAM devices
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 6c89512 soc: qcom: secure_buffer: Fix memory leak
-
- â–¼ 08/17/2017
-
-
- â–ª project device/xiaomi/gemini/
- â–ª 43b0658 msm8996-common: Update extractors to match the latest templates
-
- â–ª project hardware/cyanogen/
- â–ª e2f8e45 livedisplay: SDM: Add support for DCI-P3 display mode
-
- â–ª project hardware/qcom/wlan-caf/
- â–ª 93c8631 WifiHAL: Free the stats received so far if requestResponse() fails
- â–ª eabd5a6 Wifi-HAL: Move llstats freeing to a common API
-
- â–ª project packages/apps/Settings/
- â–ª aca49e9 Add Co Maintainer for Jalebi (#845)
-
- â–¼ 08/16/2017
-
-
- â–ª project hardware/qcom/bt-caf/
- â–ª 328d8af Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
-
- â–ª project hardware/qcom/media-caf/msm8996/
- â–ª 98e495d mm-video-v4l2: venc: Advertise correct output-size for meta-mode
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 982618f dmaengine: device must have at least one channel
-
- â–ª project packages/apps/Jelly/
- â–ª 21b9d05 Jelly: Check for onChanged in history data observer
-
- â–ª project packages/apps/Settings/
- â–ª 115a541 added helium (#843)
+ â–ª 3b96134 f2fs: sanity check segment count
+ â–ª 0a07cde timerfd: Protect the might cancel mechanism proper
+ â–ª 9bdf72b BACKPORT: f2fs: sanity check log_blocks_per_seg
+ â–ª 358dfe8 Promotion of kernel.lnx.3.18.c5-170821.
 
