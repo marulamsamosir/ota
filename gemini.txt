@@ -2,30 +2,172 @@
  â–¼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- â–¼ 09/21/2017
+ â–¼ 09/26/2017
+
+
+ â–ª project device/xiaomi/gemini/
+ â–ª e1c192c gemini: Use AOSP NFC HAL
+
+ â–ª project external/libnfc-nci/
+ â–ª 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
+
+ â–¼ 09/25/2017
+
+
+ â–ª project frameworks/base/
+ â–ª 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
+ â–ª 51c0f6f PocketService: Adjust light sensor rate to 400ms
+ â–ª 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
+ â–ª 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
+ â–ª 8f62033 Recents: Add accessibility descriptions for lock ImageViews
+ â–ª 65748c4 SystemUI: Revert some Tuner changes
+ â–ª 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
+ â–ª f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
+ â–ª e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
+ â–ª a3d99a6 Themes: Expose manifest styles for themes
+ â–ª a3dab8d Bring back Pixel theme [1/2]
+ â–ª 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
+ â–ª 90dfe02 Revert "sysui: New google pixel colors"
+ â–ª ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
+ â–ª 5c1386f Revert "base: New google pixel colors"
+ â–ª ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
+ â–ª 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
+ â–ª 79a4136 ColorEngine: fix power menu instant theming
+ â–ª 69ca41e TileAdapter: allow styling tile item decoration background
+ â–ª 98726ae ColorEngine: theme improvements/completeness
+ â–ª 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
+ â–ª 17c72a1 ColorEngine: fwb: default to default primary/bg color
+ â–ª 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
+ â–ª 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
+ â–ª 453e33b ColorEngine: default to teal color accent
+ â–ª ba42305 Introduce color engine.
+ â–ª d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
+
+ â–ª project packages/apps/DUI/
+ â–ª b79ce98 DUI:Fix up accent colors with color engine[3/3]
+
+ â–ª project packages/apps/OmniSwitch/
+
+ â–ª project packages/apps/Settings/
+ â–ª 523231c Add Andres to About
+ â–ª 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
+ â–ª bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
+ â–ª 62b94cf ColorEngine: Settings: default to default primary/bg color
+ â–ª 2244d5d ColorEngine: Settings: default to pixel accent everywhere
+ â–ª fe2ff9f Settings: Make shortcut icon colors match settings accent
+ â–ª ec49047 Settings: PreviewPagerAdapter: copy the full theme
+ â–ª 3bbba44 Improve color selection preview
+ â–ª 316b3bb ColorEngine settings: show accent color selection on first open
+ â–ª 7c5a01e Settings: Support color engine
+
+ â–ª project system/vold/
+ â–ª d8d5e6e Fix bug in cryptfs_verify_passwd with hardware disk encryption
+
+ â–ª project vendor/cm/
+ â–ª 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
+ â–ª 3b31d8f Final version for N -> 5.8.5 \m/
+ â–ª 6d81c3d vendor: sepolicy: Add Color Engine policy
+ â–ª 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
+ â–ª c0a7af1 Remove all traces of CMTE policy
+
+ â–¼ 09/23/2017
+
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª f6e00e7 f2fs: add lazytime mount option
+ â–ª dae9056 vfs: add support for a lazytime mount option
+ â–ª fcbcfd2 f2fs: hurry up to issue discard after io interruption
+ â–ª dad7647 f2fs: fix to show correct discard_granularity in sysfs
+ â–ª 48b41c7 f2fs: detect dirty inode in evict_inode
+ â–ª cbc4d3b f2fs: clear radix tree dirty tag of pages whose dirty flag is cleared
+ â–ª cc90bfa f2fs: speed up gc_urgent mode with SSR
+ â–ª d77ce65 f2fs: better to wait for fstrim completion
+ â–ª a33e239 f2fs: avoid race in between read xattr & write xattr
+ â–ª 0303b54 f2fs: make get_lock_data_page to handle encrypted inode
+ â–ª d060075 f2fs: use generic terms used for encrypted block management
+ â–ª 2f54c5c f2fs: introduce f2fs_encrypted_file for clean-up
+ â–ª c5ffcdd Revert "f2fs: add a new function get_ssr_cost"
+ â–ª f61546e f2fs: constify super_operations
+ â–ª fbea8e0 f2fs: fix to wake up all sleeping flusher
+ â–ª 5f80d44 f2fs: avoid race in between atomic_read & atomic_inc
+ â–ª f58f441 f2fs: remove unneeded parameter of change_curseg
+ â–ª b757320 f2fs: update i_flags correctly
+ â–ª 49efff4 f2fs: don't check inode's checksum if it was dirtied or writebacked
+ â–ª 0275a66 f2fs: don't need to update inode checksum for recovery
+ â–ª 6022429 f2fs: trigger fdatasync for non-atomic_write file
+ â–ª 9c58755 f2fs: fix to avoid race in between aio and gc
+ â–ª f3c4d61 f2fs: wake up discard_thread iff there is a candidate
+ â–ª df2a67e f2fs: return error when accessing insane flie offset
+ â–ª ecf02b0 f2fs: trigger normal fsync for non-atomic_write file
+ â–ª b9a3515 f2fs: clear FI_HOT_DATA correctly
+ â–ª dab0984 f2fs: fix out-of-order execution in f2fs_issue_flush
+ â–ª 328eda3 f2fs: issue discard commands if gc_urgent is set
+ â–ª 50f1d22 f2fs: remove unused function overprovision_sections
+ â–ª efe68f6 f2fs: check hot_data for roll-forward recovery
+ â–ª 7542c90 f2fs: add tracepoint for f2fs_gc
+ â–ª 7fb5f76 f2fs: retry to revoke atomic commit in -ENOMEM case
+ â–ª 3cb411f f2fs: let fill_super handle roll-forward errors
+ â–ª 38c99a5 f2fs: merge equivalent flags F2FS_GET_BLOCK_[READ|DIO]
+ â–ª e94300d f2fs: support journalled quota
+ â–ª 3541f38 f2fs: fix potential overflow when adjusting GC cycle
+ â–ª c493577 f2fs: avoid unneeded sync on quota file
+ â–ª 4a712f7 f2fs: introduce gc_urgent mode for background GC
+ â–ª 408fd28 f2fs: fix the size value in __check_sit_bitmap
+ â–ª 212d6a8 f2fs: add app/fs io stat
+ â–ª 99fe088 f2fs: do not change the valid_block value if cur_valid_map was wrongly set or cleared
+ â–ª 3fa3625 f2fs: update cur_valid_map_mir together with cur_valid_map
+ â–ª f58be22 f2fs: use printk_ratelimited for f2fs_msg
+ â–ª e169edb f2fs: expose features to sysfs entry
+ â–ª 3bf7123 f2fs: support inode checksum
+ â–ª 9f87982 f2fs: return wrong error number on f2fs_quota_write
+ â–ª e2f90de f2fs: provide f2fs_balance_fs to __write_node_page
+ â–ª fcb367b f2fs: introduce f2fs_statfs_project
+ â–ª 935aef5 f2fs: don't need to wait for node writes for atomic write
+ â–ª 123c5ba f2fs: avoid naming confusion of sysfs init
+ â–ª aa869fe f2fs: support project quota
+ â–ª 16ac9ab f2fs: record quota during dot{,dot} recovery
+ â–ª 6f6178c f2fs: enhance on-disk inode structure scalability
+ â–ª f839559 f2fs: make max inline size changeable
+ â–ª 1b4f85a f2fs: preserve i_mode if __f2fs_set_acl() fails
+ â–ª 28e638a f2fs: alloc new nids for xattr block in recovery
+ â–ª db687b5 f2fs: spread struct f2fs_dentry_ptr for inline path
+ â–ª ff357ba f2fs: remove unused input parameter
+
+ â–ª project packages/apps/ResurrectionStats/
+ â–ª 53fe045 Const: 5.8.5
+
+ â–ª project vendor/cm/
+ â–ª ed3107d RR: v5.8.5
+
+ â–¼ 09/22/2017
 
 
  â–ª project frameworks/base/
 
  â–ª project packages/apps/Settings/
 
+ â–¼ 09/21/2017
+
+
+ â–ª project hardware/cyanogen/
+ â–ª da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
+
  â–¼ 09/20/2017
 
+
+ â–ª project device/xiaomi/gemini/
+ â–ª ea99045 Merge branch 'lineage_msm8996-oreo' into rremix-nougat
 
  â–ª project frameworks/native/
  â–ª 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
- â–ª project hardware/cyanogen/
- â–ª da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
+ â–ª project packages/apps/Eleven/
 
  â–ª project system/extras/su/
  â–ª 11730a5 correct delivering process return code to caller
 
  â–¼ 09/19/2017
 
-
- â–ª project device/xiaomi/gemini/
- â–ª ea99045 Merge branch 'lineage_msm8996-oreo' into rremix-nougat
 
  â–ª project frameworks/av/
  â–ª 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
@@ -35,8 +177,6 @@
  â–ª project kernel/xiaomi/msm8996/
  â–ª 3f13b8a drivers: staging: Update qcacld-2.0 driver
  â–ª 62843cf Merge tag 'LA.UM.5.5.r1-05800-8x96.0' into HEAD
-
- â–ª project packages/apps/AudioFX/
 
  â–ª project packages/apps/Bluetooth/
 
@@ -48,8 +188,6 @@
 
  â–ª project packages/apps/CertInstaller/
 
- â–ª project packages/apps/Eleven/
-
  â–ª project packages/apps/Email/
 
  â–ª project packages/apps/EmergencyInfo/
@@ -57,8 +195,6 @@
  â–ª project packages/apps/Exchange/
 
  â–ª project packages/apps/FMRadio/
-
- â–ª project packages/apps/Gallery2/
 
  â–ª project packages/apps/Jelly/
 
@@ -111,6 +247,9 @@
  â–¼ 09/18/2017
 
 
+ â–ª project device/xiaomi/gemini/
+ â–ª df06a2d Fixing SnapDragonCam configuration
+
  â–ª project frameworks/av/
  â–ª f80e21a audioflinger: Use offloaded effects in case of PCM offload
 
@@ -128,12 +267,13 @@
  â–ª 621dd7b Add: SpeechRecorder apps
  â–ª a5cf984 Merge remote-tracking branch 'rremix/nougat' into rremix-nougat
  â–ª f0c3b1f manifest: switch to our forks of several repos
+ â–ª 9ffad6d SnapDragonCam
+ â–ª 634c585 Initial
 
  â–ª project build/
  â–ª f6958ef Updating Security String to 2017-09-05 Bug:63846344
 
  â–ª project device/xiaomi/gemini/
- â–ª df06a2d Fixing SnapDragonCam configuration
  â–ª f97e8b6 Add: SpeechRecorder apps
  â–ª 8483e07 Add: SoundRecorder apps
 
@@ -183,13 +323,10 @@
  â–¼ 09/16/2017
 
 
- â–ª project android/
- â–ª 9ffad6d SnapDragonCam
- â–ª 634c585 Initial
-
  â–ª project device/xiaomi/gemini/
  â–ª 730e343 Fixing depedencies
  â–ª 0a810ae SnapdragonCamera
+ â–ª ffe3e98 Initial
 
  â–ª project external/libavc/
  â–ª 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
@@ -251,17 +388,6 @@
 
  â–¼ 09/15/2017
 
-
- â–ª project device/xiaomi/gemini/
- â–ª ffe3e98 Initial
-
- â–ª project packages/apps/AudioFX/
- â–ª 3f7743b AudioFX: use vector drawables
- â–ª b94e30b AudioFX: set theme accent to white
- â–ª 00d3381 AudioFX: match control switches color with fragment background
- â–ª f5d78ad AudioFX: Add Reverb toggle
- â–ª 9fe5a3a AudioFX: Use default material toggle
- â–ª 9662067 AudioFX: Apply effects independently of the output flags
 
  â–ª project system/bt/
  â–ª 215d434 Add missing extension length check while parsing BNEP control packets
@@ -403,11 +529,20 @@
  â–ª project device/xiaomi/gemini/
  â–ª 050e570 msm8996-common: configs: Advertize high-speed recording profiles
 
+ â–ª project external/libmpeg2/
+ â–ª 5fbd70a Merge 4105a310e353bc07ed3c96345f2ef87b3a318687 on remote branch
+
+ â–ª project external/sfntly/
+ â–ª 666f32b Merge 302221dbf374c9907df36a4883a8fef096f50e98 on remote branch
+
  â–ª project hardware/qcom/audio-caf/msm8996/
  â–ª da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
 
  â–ª project hardware/qcom/media-caf/msm8996/
  â–ª b9cc6fd Merge 1a05f07a6fff81aa44d8016f1047d922fbbbce02 on remote branch
+
+ â–ª project kernel/xiaomi/msm8996/
+ â–ª 224ae2c Merge ec3b3f764bc352e6a6b4d21de152f3b25d29b579 on remote branch
 
  â–ª project vendor/xiaomi/
  â–ª a6df1a8 natrium: Update to MIUI 7.8.24 Global dev blobs
@@ -416,15 +551,6 @@
 
  â–¼ 09/04/2017
 
-
- â–ª project external/libmpeg2/
- â–ª 5fbd70a Merge 4105a310e353bc07ed3c96345f2ef87b3a318687 on remote branch
-
- â–ª project external/sfntly/
- â–ª 666f32b Merge 302221dbf374c9907df36a4883a8fef096f50e98 on remote branch
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 224ae2c Merge ec3b3f764bc352e6a6b4d21de152f3b25d29b579 on remote branch
 
  â–ª project packages/apps/SetupWizard/
  â–ª f7d9926 SetupWizard: Fix the accessibility services gesture
@@ -458,21 +584,17 @@
  â–ª db93e14 FROMLIST: f2fs: introduce discard_granularity sysfs entry
  â–ª 65ee37f FROMLIST: f2fs: use IPU for cold files
  â–ª 14f0c6d FROMLIST: f2fs: make background threads of f2fs being aware of freezing
+ â–ª ec3b3f7 Promotion of kernel.lnx.3.18.c5-170828.
 
  â–ª project packages/apps/Settings/
  â–ª 7b502c0 D851 Maintainer (#855)
+ â–ª 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
 
  â–¼ 08/29/2017
 
 
- â–ª project kernel/xiaomi/msm8996/
- â–ª ec3b3f7 Promotion of kernel.lnx.3.18.c5-170828.
-
  â–ª project packages/apps/Jelly/
  â–ª 5f4c6b0 Jelly: Add elevation effect to searchBar
-
- â–ª project packages/apps/Settings/
- â–ª 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
 
  â–¼ 08/28/2017
 
@@ -490,105 +612,4 @@
  â–ª project packages/apps/OmniSwitch/
 
  â–ª project packages/apps/Settings/
-
- â–¼ 08/26/2017
-
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 1744abc Promotion of kernel.lnx.3.18.c5-170825.
-
- â–ª project packages/apps/Eleven/
- â–ª 943d43e Eleven: Fix restoring user settings
-
- â–ª project packages/apps/UnifiedEmail/
- â–ª 2dd00df Email: Fix led notification settings
-
- â–ª project packages/services/Telephony/
- â–ª 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
-
- â–¼ 08/25/2017
-
-
- â–ª project device/xiaomi/gemini/
- â–ª 419407f msm8996-common: Move Lineage specific overlays to overlay-lineage
-
- â–ª project external/libmpeg2/
- â–ª 4105a31 Promotion of android-external.lnx.2.0.c1-00022.
-
- â–ª project external/sfntly/
- â–ª 302221d Promotion of android-external.lnx.2.0.c1-00022.
-
- â–ª project frameworks/base/
- â–ª 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
- â–ª 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
- â–ª d1cb955 Tweak Privacy Guard dialog layout
- â–ª 20d80eb PowerManager: Allow to distinguish different keypresses
- â–ª 8b63de6 Add @hide annotation to the privacy guard ops set
- â–ª 4193207 Change visibility of the Privacy Guard ops set
- â–ª 6ab7b90 Camera: ignore torch status update for aux or compsite camera
- â–ª be1d6ba base: audioservice: Set BT_SCO status
-
- â–ª project frameworks/native/
- â–ª 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- â–ª project frameworks/opt/telephony/
- â–ª b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
-
- â–ª project hardware/qcom/media-caf/msm8996/
- â–ª 1a05f07 Promotion of video-userspace.lnx.2.1.c1-00048.
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª bf01854 ASoC: msm: qdspv2: initialize struct member before being used
- â–ª 559eb1f Promotion of kernel.lnx.3.18.c5-170824.
-
- â–¼ 08/24/2017
-
-
- â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª 6172a26 Promotion of audio-userspace.lnx.2.1.c1-00038.
- â–ª b3fea85 Merge "Fix security vulnerability: Equalizer setParameter memory overflow" into audio-userspace.lnx.2.1.c1-dev
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª c049c21 Merge "tracing : fix race condition reading saved tgids"
- â–ª 7f9294a Merge "diag: Synchronize msg mask read and write on a peripheral"
- â–ª 71b2e49 Promotion of kernel.lnx.3.18.c5-170823.1.
- â–ª d5883d5 Merge "msm: ipa3: Fix IPA aggregation force close call"
- â–ª 41e4f88 msm: ipa3: Fix IPA aggregation force close call
- â–ª 84a5df1 Promotion of kernel.lnx.3.18.c5-170823.
- â–ª 3b165a4 Merge "thermal: tsens: Disable Tsens interrupts during driver initialization"
- â–ª 993865b tracing : fix race condition reading saved tgids
-
- â–ª project packages/apps/Settings/
- â–ª 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
-
- â–¼ 08/23/2017
-
-
- â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª bdb5650 Promotion of audio-userspace.lnx.2.1.c1-00037.
- â–ª 577263d Merge "policy_hal: adjust bitrate restriction for wma" into audio-userspace.lnx.2.1.c1-dev
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 76c5249 Merge "FROMLIST: f2fs: sanity check checkpoint segno and blkoff"
- â–ª 23a6cb2 Merge "f2fs: sanity check segment count"
- â–ª f49145a Merge "timerfd: Protect the might cancel mechanism proper"
- â–ª 98b503a FROMLIST: f2fs: sanity check checkpoint segno and blkoff
-
- â–¼ 08/22/2017
-
-
- â–ª project external/libmpeg2/
- â–ª 38cb339 Correcting NumCoeff Check in VLD
- â–ª 2c56624 Adding Error Check For PictureStructure Param
- â–ª cac557b Update mbs_left In Case Of Missing Slice
- â–ª 23fc803 Check For Zero Width/Height in Frame Header
-
- â–ª project hardware/qcom/audio-caf/msm8996/
- â–ª 1d8f162 Fix security vulnerability: Equalizer setParameter memory overflow
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª 3b96134 f2fs: sanity check segment count
- â–ª 0a07cde timerfd: Protect the might cancel mechanism proper
- â–ª 9bdf72b BACKPORT: f2fs: sanity check log_blocks_per_seg
- â–ª 358dfe8 Promotion of kernel.lnx.3.18.c5-170821.
 
