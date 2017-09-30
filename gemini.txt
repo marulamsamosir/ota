@@ -2,11 +2,35 @@
  â–¼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- â–¼ 09/26/2017
+ â–¼ 09/30/2017
 
 
  â–ª project device/xiaomi/gemini/
- â–ª e1c192c gemini: Use AOSP NFC HAL
+ â–ª 00def54 Initial commit
+
+ â–ª project frameworks/base/
+ â–ª 3cc1a5a [1/4] SystemUI: add burnIn protection setting
+
+ â–ª project packages/apps/DUI/
+ â–ª 7180a95 DUI: add burnIn protection setting [4/4]
+
+ â–ª project packages/apps/Settings/
+ â–ª 47d0991 [2/4] Settings: add burnIn protection setting
+
+ â–¼ 09/28/2017
+
+
+ â–ª project vendor/cmsdk/
+ â–ª 8f4f039 [3/3] cmsdk: add burnIn protection setting
+ â–ª 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
+ â–ª 253a12e cmsdk: Run in core apps only for poweroff alarm boot
+ â–ª f4da7ec Make CMParts a protected component manager
+ â–ª a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
+ â–ª 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
+ â–ª cf42384 cmsdk: Disable unused services
+
+ â–¼ 09/26/2017
+
 
  â–ª project external/libnfc-nci/
  â–ª 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
@@ -155,8 +179,8 @@
  â–¼ 09/20/2017
 
 
- â–ª project device/xiaomi/gemini/
- â–ª ea99045 Merge branch 'lineage_msm8996-oreo' into rremix-nougat
+ â–ª project frameworks/av/
+ â–ª 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
 
  â–ª project frameworks/native/
  â–ª 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
@@ -169,9 +193,6 @@
  â–¼ 09/19/2017
 
 
- â–ª project frameworks/av/
- â–ª 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
-
  â–ª project hardware/qcom/fm/
 
  â–ª project kernel/xiaomi/msm8996/
@@ -182,19 +203,18 @@
 
  â–ª project packages/apps/Calendar/
 
- â–ª project packages/apps/Camera2/
-
  â–ª project packages/apps/CellBroadcastReceiver/
 
  â–ª project packages/apps/CertInstaller/
+
+ â–ª project packages/apps/Eleven/
+ â–ª 49b8b9c Eleven: Create one cursor per background task
 
  â–ª project packages/apps/Email/
 
  â–ª project packages/apps/EmergencyInfo/
 
  â–ª project packages/apps/Exchange/
-
- â–ª project packages/apps/FMRadio/
 
  â–ª project packages/apps/Jelly/
 
@@ -205,6 +225,9 @@
  â–ª project packages/apps/Recorder/
 
  â–ª project packages/apps/SetupWizard/
+
+ â–ª project packages/apps/SnapdragonGallery/
+ â–ª 05ef202 Merge 9b614e24098fa673d1c0ef50567d7a9710593ec6 on remote branch
 
  â–ª project packages/apps/Stk/
 
@@ -247,14 +270,8 @@
  â–¼ 09/18/2017
 
 
- â–ª project device/xiaomi/gemini/
- â–ª df06a2d Fixing SnapDragonCam configuration
-
  â–ª project frameworks/av/
  â–ª f80e21a audioflinger: Use offloaded effects in case of PCM offload
-
- â–ª project packages/apps/Eleven/
- â–ª 49b8b9c Eleven: Create one cursor per background task
 
  â–ª project packages/apps/Settings/
  â–ª efbb78f Add moderator tags to about settings
@@ -263,19 +280,10 @@
 
 
  â–ª project android/
- â–ª ea19c6f Add: SoundRecorder apps
- â–ª 621dd7b Add: SpeechRecorder apps
- â–ª a5cf984 Merge remote-tracking branch 'rremix/nougat' into rremix-nougat
  â–ª f0c3b1f manifest: switch to our forks of several repos
- â–ª 9ffad6d SnapDragonCam
- â–ª 634c585 Initial
 
  â–ª project build/
  â–ª f6958ef Updating Security String to 2017-09-05 Bug:63846344
-
- â–ª project device/xiaomi/gemini/
- â–ª f97e8b6 Add: SpeechRecorder apps
- â–ª 8483e07 Add: SoundRecorder apps
 
  â–ª project external/skia/
  â–ª 878b9da Defend against ICOs with large BMPs embedded DO NOT MERGE
@@ -315,18 +323,8 @@
  â–ª cb1ab8b AppOps: Redesign
  â–ª 3a0e238 Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
 
- â–ª project packages/apps/SnapdragonCamera/
- â–ª ad212b4 WideAnglePanoramaUI: Show switcher on Stop Capture
- â–ª e694545 Snap: fix highspeed and high-framerate video recording
- â–ª 5c3a315 Snap: fix ArrayIndexOutOfBoundsException on setUpCameraOutputs
-
  â–¼ 09/16/2017
 
-
- â–ª project device/xiaomi/gemini/
- â–ª 730e343 Fixing depedencies
- â–ª 0a810ae SnapdragonCamera
- â–ª ffe3e98 Initial
 
  â–ª project external/libavc/
  â–ª 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
@@ -415,11 +413,6 @@
  â–¼ 09/11/2017
 
 
- â–ª project device/xiaomi/gemini/
- â–ª 334a8b9 msm8996-common: init: Check if power off alarm is set
- â–ª 9540b4b msm8996-common: init: Check reboot_reason when setting alarm_boot prop
- â–ª 4255743 msm8996-common: init: Use core init function to read from files
-
  â–ª project packages/apps/Jelly/
  â–ª 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
 
@@ -494,6 +487,10 @@
  â–ª 0cedb78 ANDROID: Sdcardfs: Move gid derivation under flag
  â–ª 8bcbef5 ANDROID: mnt: Fix freeing of mount data
 
+ â–ª project vendor/xiaomi/
+ â–ª 0ba5be3 msm8996-common: Remove pd-mapper
+ â–ª 6e6c591 msm8996-common: Update to MIUI 7.9.7 Global dev blobs
+
  â–¼ 09/09/2017
 
 
@@ -501,23 +498,13 @@
  â–ª aa2b306 drivers: staging: Update qcacld-2.0 driver
  â–ª 9aed790 Merge tag 'LA.UM.5.5.r1-05700-8x96.0' into HEAD
 
- â–ª project vendor/cm/
- â–ª 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
-
- â–ª project vendor/xiaomi/
- â–ª 0ba5be3 msm8996-common: Remove pd-mapper
- â–ª 6e6c591 msm8996-common: Update to MIUI 7.9.7 Global dev blobs
-
- â–¼ 09/08/2017
-
-
- â–ª project device/xiaomi/gemini/
- â–ª 0f93f23 msm8996-common: Remove pd-mapper
-
  â–ª project packages/apps/Settings/
  â–ª 924a9c6 Add J5H to the list (#864)
 
- â–¼ 09/07/2017
+ â–ª project vendor/cm/
+ â–ª 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
+
+ â–¼ 09/08/2017
 
 
  â–ª project packages/apps/Settings/
@@ -525,15 +512,6 @@
 
  â–¼ 09/05/2017
 
-
- â–ª project device/xiaomi/gemini/
- â–ª 050e570 msm8996-common: configs: Advertize high-speed recording profiles
-
- â–ª project external/libmpeg2/
- â–ª 5fbd70a Merge 4105a310e353bc07ed3c96345f2ef87b3a318687 on remote branch
-
- â–ª project external/sfntly/
- â–ª 666f32b Merge 302221dbf374c9907df36a4883a8fef096f50e98 on remote branch
 
  â–ª project hardware/qcom/audio-caf/msm8996/
  â–ª da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
@@ -555,17 +533,23 @@
  â–ª project packages/apps/SetupWizard/
  â–ª f7d9926 SetupWizard: Fix the accessibility services gesture
 
- â–¼ 09/02/2017
+ â–¼ 09/03/2017
 
 
  â–ª project frameworks/av/
  â–ª be37655 omx: Skip the whole dataspace signaling on legacy QCOM
+
+ â–¼ 09/02/2017
+
 
  â–ª project packages/apps/SetupWizard/
  â–ª 77ef790 SetupWizard: Remove Themes related code
 
  â–¼ 09/01/2017
 
+
+ â–ª project packages/apps/Settings/
+ â–ª 84d2690 Asus Zenfone 3 (Z012D) Maintainer (#859)
 
  â–ª project packages/resources/devicesettings/
  â–ª ff0aa81 Add strings for devices' custom gesture handlers
@@ -574,42 +558,6 @@
 
 
  â–ª project packages/apps/Settings/
- â–ª 84d2690 Asus Zenfone 3 (Z012D) Maintainer (#859)
  â–ª 67faee0 Piccolo Maintainer (#858)
-
- â–¼ 08/30/2017
-
-
- â–ª project kernel/xiaomi/msm8996/
- â–ª db93e14 FROMLIST: f2fs: introduce discard_granularity sysfs entry
- â–ª 65ee37f FROMLIST: f2fs: use IPU for cold files
- â–ª 14f0c6d FROMLIST: f2fs: make background threads of f2fs being aware of freezing
- â–ª ec3b3f7 Promotion of kernel.lnx.3.18.c5-170828.
-
- â–ª project packages/apps/Settings/
  â–ª 7b502c0 D851 Maintainer (#855)
- â–ª 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
-
- â–¼ 08/29/2017
-
-
- â–ª project packages/apps/Jelly/
- â–ª 5f4c6b0 Jelly: Add elevation effect to searchBar
-
- â–¼ 08/28/2017
-
-
- â–ª project packages/apps/Jelly/
- â–ª 8e71ae9 Jelly: Remove the SwipeRefreshLayout
-
- â–¼ 08/27/2017
-
-
- â–ª project frameworks/base/
-
- â–ª project packages/apps/DUI/
-
- â–ª project packages/apps/OmniSwitch/
-
- â–ª project packages/apps/Settings/
 
